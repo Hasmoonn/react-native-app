@@ -6,8 +6,11 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function Index() {
   return (
     <SafeAreaView className="flex-1 bg-background p-5">
-      <Text className="text-xl font-bold text-blue-500">
-        Welcome to Nativewind!
+      <Text className="text-7xl font-sans-extrabold text-blue-500">
+        Home Screen 1
+      </Text>
+      <Text className="text-6xl font-sans-bold text-red-500">
+        Home Screen 2
       </Text>
 
       <Link href="/onboarding" className="mt-4 bg-primary justify-center rounded text-white p-4">
