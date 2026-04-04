@@ -1,3 +1,4 @@
+// icons.ts
 import activity from "@/assets/icons/activity.png";
 import add from "@/assets/icons/add.png";
 import adobe from "@/assets/icons/adobe.png";
@@ -18,24 +19,24 @@ import spotify from "@/assets/icons/spotify.png";
 import wallet from "@/assets/icons/wallet.png";
 
 export const icons = {
-    home,
-    wallet,
-    setting,
-    activity,
-    add,
-    back,
-    menu,
-    plus,
-    notion,
-    dropbox,
-    openai,
-    adobe,
-    medium,
-    figma,
-    spotify,
-    github,
-    claude,
-    canva,
+  activity,
+  add,
+  adobe,
+  back,
+  canva,
+  claude,
+  dropbox,
+  figma,
+  github,
+  home,
+  medium,
+  menu,
+  notion,
+  openai,
+  plus,
+  setting,
+  spotify,
+  wallet,
 } as const;
 
 export type IconKey = keyof typeof icons;
