@@ -3,14 +3,14 @@ import React from 'react'
 
 const ListHeading = ({ title }: ListHeadingProps ) => {
   return (
-    <View className='list-head'>
-      <Text className="list-title">{title}</Text>
+      <View className="my-5 flex flex-row items-center justify-between">
+        <Text className="text-2xl font-sans-bold text-primary">{title}</Text>
 
-      <TouchableOpacity className='list-action'>
-        <Text className='list-action-text'>View all</Text>
-      </TouchableOpacity>
-    </View>
-  )
+        <TouchableOpacity className="rounded-full border border-black/20 px-4 py-1">
+          <Text className="text-lg font-sans-semibold text-primary">View all</Text>
+        </TouchableOpacity>
+      </View>
+  );
 }
 
 export default ListHeading

@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+/* @layer components {
   .tabs-icon {
-        @apply size-12 items-center justify-center;
+        @apply w-12 h-12 flex items-center justify-center;
     }
 
     .tabs-pill {
-        @apply size-12 items-center justify-center rounded-full bg-transparent;
+        @apply w-12 h-12 flex items-center justify-center rounded-full bg-transparent;
     }
 
     .tabs-active {
@@ -16,19 +16,19 @@
     }
 
     .tabs-glyph {
-        @apply size-6;
+        @apply w-6 h-6;
     }
 
     .home-header {
-        @apply mb-2.5 flex-row items-center justify-between;
+        @apply mb-2.5 flex flex-row items-center justify-between;
     }
 
     .home-user {
-        @apply flex-row items-center;
+        @apply flex flex-row items-center;
     }
 
     .home-avatar {
-        @apply size-16 rounded-full;
+        @apply w-16 h-16 rounded-full;
     }
 
     .home-user-name {
@@ -36,11 +36,11 @@
     }
 
     .home-add-icon {
-        @apply size-12;
+        @apply w-12 h-12;
     }
 
     .home-balance-card {
-        @apply my-2.5 min-h-50 justify-between gap-5 rounded-bl-4xl rounded-tr-4xl bg-accent p-6;
+        @apply my-2.5 min-h-[200px] flex justify-between gap-5 rounded-bl-4xl rounded-tr-4xl bg-accent p-6;
     }
 
     .home-balance-label {
@@ -48,7 +48,7 @@
     }
 
     .home-balance-row {
-        @apply flex-row items-center justify-between;
+        @apply flex flex-row items-center justify-between;
     }
 
     .home-balance-amount {
@@ -60,7 +60,7 @@
     }
 
     .list-head {
-        @apply my-5 flex-row items-center justify-between;
+        @apply my-5 flex flex-row items-center justify-between;
     }
 
     .list-title {
@@ -80,11 +80,11 @@
     }
 
     .upcoming-row {
-        @apply flex-row items-center gap-3;
+        @apply flex flex-row items-center gap-3;
     }
 
     .upcoming-icon {
-        @apply size-14;
+        @apply w-14 h-14;
     }
 
     .upcoming-price {
@@ -108,19 +108,19 @@
     }
 
     .sub-head {
-        @apply flex-row items-center py-2;
+        @apply flex flex-row items-center py-2;
     }
 
     .sub-main {
-        @apply min-w-0 flex-1 flex-row items-center gap-3;
+        @apply min-w-0 flex-1 flex flex-row items-center gap-3;
     }
 
     .sub-icon {
-        @apply size-16 rounded-lg;
+        @apply w-16 h-16 rounded-lg;
     }
 
     .sub-copy {
-        @apply min-w-0 flex-1;
+        @apply min-w-0 flex-1 flex;
     }
 
     .sub-title {
@@ -132,7 +132,7 @@
     }
 
     .sub-price-box {
-        @apply ml-3 shrink-0 items-end;
+        @apply ml-3 shrink-0 flex items-end;
     }
 
     .sub-price {
@@ -144,19 +144,19 @@
     }
 
     .sub-body {
-        @apply mt-6 gap-4;
+        @apply mt-6 flex gap-4;
     }
 
     .sub-details {
-        @apply gap-6;
+        @apply flex gap-6;
     }
 
     .sub-row {
-        @apply flex-row items-center justify-between gap-3;
+        @apply flex flex-row items-center justify-between gap-3;
     }
 
     .sub-row-copy {
-        @apply min-w-0 flex-1 flex-row items-center gap-2;
+        @apply min-w-0 flex-1 flex flex-row items-center gap-2;
     }
 
     .sub-label {
@@ -168,7 +168,7 @@
     }
 
     .sub-cancel {
-        @apply mt-2 items-center rounded-full bg-primary py-4;
+        @apply mt-2 flex items-center rounded-full bg-primary py-4;
     }
 
     .sub-cancel-disabled {
@@ -200,15 +200,15 @@
     }
 
     .auth-brand-block {
-        @apply mt-2 items-center;
+        @apply mt-2 flex items-center;
     }
 
     .auth-logo-wrap {
-        @apply mb-7 flex-row items-center gap-3;
+        @apply mb-7 flex flex-row items-center gap-3;
     }
 
     .auth-logo-mark {
-        @apply relative size-14 items-center justify-center rounded-2xl bg-accent;
+        @apply relative w-14 h-14 flex items-center justify-center rounded-2xl bg-accent;
     }
 
     .auth-logo-mark-text {
@@ -236,11 +236,11 @@
     }
 
     .auth-form {
-        @apply gap-4;
+        @apply flex gap-4;
     }
 
     .auth-field {
-        @apply gap-2;
+        @apply flex gap-2;
     }
 
     .auth-label {
@@ -264,7 +264,7 @@
     }
 
     .auth-button {
-        @apply mt-1 items-center rounded-2xl bg-accent py-4;
+        @apply mt-1 flex items-center rounded-2xl bg-accent py-4;
     }
 
     .auth-button-disabled {
@@ -276,7 +276,7 @@
     }
 
     .auth-secondary-button {
-        @apply items-center rounded-2xl border border-accent/30 bg-accent/10 py-3;
+        @apply flex items-center rounded-2xl border border-accent/30 bg-accent/10 py-3;
     }
 
     .auth-secondary-button-text {
@@ -284,7 +284,7 @@
     }
 
     .auth-divider-row {
-        @apply my-4 flex-row items-center gap-3;
+        @apply my-4 flex flex-row items-center gap-3;
     }
 
     .auth-divider-line {
@@ -296,7 +296,7 @@
     }
 
     .auth-link-row {
-        @apply mt-5 flex-row items-center justify-center gap-1;
+        @apply mt-5 flex flex-row items-center justify-center gap-1;
     }
 
     .auth-link-copy {
@@ -316,7 +316,7 @@
     }
 
     .modal-header {
-        @apply flex-row items-center justify-between border-b border-border px-5 py-4;
+        @apply flex flex-row items-center justify-between border-b border-border px-5 py-4;
     }
 
     .modal-title {
@@ -324,7 +324,7 @@
     }
 
     .modal-close {
-        @apply size-8 items-center justify-center rounded-full bg-muted;
+        @apply w-8 h-8 flex items-center justify-center rounded-full bg-muted;
     }
 
     .modal-close-text {
@@ -332,15 +332,15 @@
     }
 
     .modal-body {
-        @apply gap-5 p-5;
+        @apply flex gap-5 p-5;
     }
 
     .picker-row {
-        @apply flex-row gap-3;
+        @apply flex flex-row gap-3;
     }
 
     .picker-option {
-        @apply flex-1 items-center rounded-2xl border border-border bg-background py-3;
+        @apply flex-1 flex items-center rounded-2xl border border-border bg-background py-3;
     }
 
     .picker-option-active {
@@ -356,7 +356,7 @@
     }
 
     .category-scroll {
-        @apply flex-row flex-wrap gap-2;
+        @apply flex flex-row flex-wrap gap-2;
     }
 
     .category-chip {
@@ -374,4 +374,4 @@
     .category-chip-text-active {
         @apply text-accent;
     }
-}
+} */

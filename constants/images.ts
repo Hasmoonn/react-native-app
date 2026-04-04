@@ -1,4 +1,10 @@
-import splashPattern from '@/assets/images/splash-pattern.png'
-import avatar from '@/assets/images/avatar.png'
+// images.ts
+import splashPattern from "@/assets/images/splash-pattern.png";
+import avatar from "@/assets/images/avatar.png";
 
-export default { splashPattern, avatar }
+const images = {
+  splashPattern,
+  avatar,
+};
+
+export default images;
