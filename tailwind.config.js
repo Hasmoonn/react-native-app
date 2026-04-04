@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   // NOTE: Update this to include the paths to all files that contain Nativewind classes.
-  content: ["./app/index.tsx", "./components/**/*.{js,jsx,ts,tsx}"],
+  content: ["./app/**/*", "./components/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
@@ -17,6 +17,14 @@ module.exports = {
         success: "#16a34a",
         destructive: "#dc2626",
         subscription: "#8fd1bd",
+      },
+      fontFamily: {
+        sans: ["sans-regular"],
+        "sans-light": ["sans-light"],
+        "sans-medium": ["sans-medium"],
+        "sans-bold": ["sans-bold"],
+        "sans-semibold": ["sans-semibold"],
+        "sans-extrabold": ["sans-extrabold"],
       },
       spacing: {
         0: "0px",
