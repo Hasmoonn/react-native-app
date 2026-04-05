@@ -14,11 +14,14 @@ const SubscriptionCard = ({name, price, currency, icon, billing, color, category
       {/* Header */}
       <View className="flex flex-row items-center py-2">
         <View className="min-w-0 flex-1 flex flex-row items-center gap-3">
-          <Image source={icon} className="w-16 h-16 rounded-lg" />
-          <Text numberOfLines={1} className="mb-1 text-lg font-sans-bold text-primary">{name}</Text>
-          <Text numberOfLines={1} ellipsizeMode="tail" className="text-sm font-sans-semibold text-muted-foreground">
-            {category?.trim() || plan?.trim() || (renewalDate ? formatSubscriptionDateTime(renewalDate) : "")}
-          </Text>
+          <Image source={icon} style={{ width: 64, height: 64, borderRadius: 8 }} />
+          <View className='flex flex-col'>
+            <Text numberOfLines={1} className="mb-1 text-lg font-sans-bold text-primary">{name}</Text>
+            <Text numberOfLines={1} ellipsizeMode="tail" className="text-sm font-sans-semibold text-muted-foreground">
+              {category?.trim() || plan?.trim() || (renewalDate ? formatSubscriptionDateTime(renewalDate) : "")}
+            </Text>
+          </View>
+          
         </View>
 
         <View className="ml-3 shrink-0 flex items-end">

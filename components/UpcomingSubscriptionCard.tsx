@@ -7,7 +7,7 @@ const UpcomingSubscriptionCard = ({ name, price, daysLeft, icon, currency }: Upc
   return (
     <View className="mr-4 w-44 rounded-2xl border border-black/10 bg-background p-4">
       <View className="flex flex-row items-center gap-3">
-        <Image source={icon} className="w-14 h-14" />
+        <Image source={icon} style={{ width: 56, height: 56 }} />
         <View>
           <Text className="text-lg font-sans-bold text-primary">
             {formatCurrency(price, currency)}
